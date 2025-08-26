@@ -42,35 +42,5 @@ streamlit run app.py
 
 6. Open `http://localhost:8501` in your browser.
 
-## Notes on secrets
 
-- Do not commit `.env` to the repository. Use `.env.example` as a template.
-- When deploying on a hosting service or GitHub Actions, store the key in repository secrets and read it from environment variables at runtime.
 
-## Creating the GitHub repo and pushing
-
-Option A: use the GitHub web UI
-
-- Create a new repository on GitHub.
-- Follow the instructions to add a remote and push your local branch.
-
-Option B: use the gh CLI (if installed)
-
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "Initial commit: Streamlit app"
-gh repo create YOUR_USERNAME/personalized-learning-assistant --public --source=. --remote=origin --push
-```
-
-Alternative if not using gh:
-
-```bash
-git remote add origin git@github.com:YOUR_USERNAME/personalized-learning-assistant.git
-git push -u origin main
-```
-
-## GitHub Actions - basic CI
-
-See `.github/workflows/python-ci.yml` for a simple workflow that installs requirements and runs a sanity check.
