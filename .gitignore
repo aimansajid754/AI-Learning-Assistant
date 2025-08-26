@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+.env.*
+output/
+.DS_Store
+
+# Editor configs
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+# pytest
+.pytest_cache/
