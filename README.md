@@ -1,4 +1,4 @@
-# Personalized Learning Assistant
+# AI Learning Assistant Using Gemini API
 
 A Streamlit app that converts PDFs into summaries, multiple choice quizzes, and flashcards using the Gemini API. Optimized to work well on limited free-tier API quotas.
 
